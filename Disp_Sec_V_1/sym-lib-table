@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name ESP8266)(type Legacy)(uri ${KIPRJMOD}/kicad-ESP8266-master/ESP8266.lib)(options "")(descr ""))
+  (lib (name Regulator_Switching)(type Legacy)(uri ${KIPRJMOD}/Regulator_Switching/Regulator_Switching.lib)(options "")(descr ""))
+  (lib (name RF2)(type Legacy)(uri ${KIPRJMOD}/RF2.lib)(options "")(descr ""))
+)

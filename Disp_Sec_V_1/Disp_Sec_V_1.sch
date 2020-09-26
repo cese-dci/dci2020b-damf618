@@ -6,12 +6,12 @@ encoding utf-8
 Sheet 1 1
 Title "Dispositivo Secundario - SMRAI "
 Date "2020-09-11"
-Rev "1.0"
+Rev "1.1"
 Comp "Daniel Marquez - ISOLSE srl"
 Comment1 "* Version con adaptador nrf24l01(solo Antena)  "
-Comment2 ""
+Comment2 "* Dispositivo de Monitoreo de Contactos secos de Alarma/Falla (N.O)"
 Comment3 ""
-Comment4 ""
+Comment4 "* Sistema Monitoreo Remoto de Alarma de Incencio (SMRAI )"
 $EndDescr
 $Comp
 L power:GND #PWR0101
@@ -154,7 +154,7 @@ L Connector_Generic:Conn_01x02 J3
 U 1 1 5F670F99
 P 8375 3200
 F 0 "J3" H 8455 3192 50  0000 L CNN
-F 1 "Conn_01x02" H 8455 3101 50  0000 L CNN
+F 1 "Contacto F (N.0)" H 8455 3101 50  0000 L CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 8375 3200 50  0001 C CNN
 F 3 "~" H 8375 3200 50  0001 C CNN
 	1    8375 3200
@@ -856,17 +856,6 @@ F 3 "https://www.sunrom.com/p/dc-dc-step-down-switching-regulator-based-on-lm259
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x02 J1
-U 1 1 5FB55054
-P 5500 1325
-F 0 "J1" H 5500 1025 50  0000 L CNN
-F 1 "Conn_01x02" H 5125 900 50  0000 L CNN
-F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 5500 1325 50  0001 C CNN
-F 3 "~" H 5500 1325 50  0001 C CNN
-	1    5500 1325
-	-1   0    0    1   
-$EndComp
-$Comp
 L power:+12V #PWR0129
 U 1 1 5FB6F944
 P 7525 950
@@ -1185,17 +1174,6 @@ F 3 "~" H 8675 1550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x02 J2
-U 1 1 5F818A8C
-P 8375 1250
-F 0 "J2" H 8455 1242 50  0000 L CNN
-F 1 "Conn_01x02" H 8455 1151 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 8375 1250 50  0001 C CNN
-F 3 "~" H 8375 1250 50  0001 C CNN
-	1    8375 1250
-	0    -1   -1   0   
-$EndComp
-$Comp
 L power:+12V #PWR0136
 U 1 1 5F818A96
 P 7925 1125
@@ -1276,11 +1254,11 @@ Wire Wire Line
 Wire Wire Line
 	8850 1550 8850 1975
 Wire Notes Line width 20 style dotted rgb(0, 0, 0)
-	3000 2975 3200 3175
+	2975 2675 3175 2475
 Wire Notes Line width 20 style dotted rgb(0, 0, 0)
-	3200 3175 3575 3175
-Text Notes 3625 3250 0    50   ~ 0
-Potenciometro para definir el periodo de\ntiempo quepermanecera apagado el \nsistema ante un RESET (RST)
+	3175 2475 3550 2475
+Text Notes 3625 2650 0    35   ~ 0
+Potenciometro para definir el periodo de\ntiempo que permanecera apagado el \nsistema ante un RESET (RST)
 Text Notes 7900 4850 0    50   ~ 0
 Led de indicacion de estado normal,\ncomo la ausencia de los estados de\nfalla o alarma.\n
 Text Notes 9850 3925 0    50   ~ 0
@@ -1375,11 +1353,9 @@ Wire Wire Line
 	1100 4750 925  4750
 NoConn ~ 2700 5150
 NoConn ~ 2700 5250
-NoConn ~ 2700 5350
 NoConn ~ 2700 5750
 NoConn ~ 2700 5850
 NoConn ~ 2700 5950
-NoConn ~ 1100 6050
 NoConn ~ 1100 5950
 NoConn ~ 1100 5850
 NoConn ~ 1100 5650
@@ -1480,6 +1456,70 @@ F 3 "https://es.aliexpress.com/item/32969668221.html" H 4425 5150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3550 6175 3550 6050
+Wire Notes Line width 10
+	5000 4350 3875 4350
+Wire Notes Line width 10
+	3875 4350 3875 6300
+Wire Notes Line width 10
+	3875 6300 5000 6300
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 5FB55054
+P 5500 1325
+F 0 "J1" H 5500 1025 50  0000 L CNN
+F 1 "DC Supply" H 5200 1500 50  0000 L CNN
+F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 5500 1325 50  0001 C CNN
+F 3 "~" H 5500 1325 50  0001 C CNN
+	1    5500 1325
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 5F818A8C
+P 8375 1250
+F 0 "J2" H 8455 1242 50  0000 L CNN
+F 1 "Contacto A (N.O) " H 8455 1151 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 8375 1250 50  0001 C CNN
+F 3 "~" H 8375 1250 50  0001 C CNN
+	1    8375 1250
+	0    -1   -1   0   
+$EndComp
+Text Notes 3625 3450 0    50   ~ 0
+Modulo de reseteo temporizado (periodo \nconfigurable), para reposicion ante fallas \nde comunicacion.    
+$Comp
+L power:GND #PWR0141
+U 1 1 5F76DA08
+P 625 6200
+F 0 "#PWR0141" H 625 5950 50  0001 C CNN
+F 1 "GND" H 630 6027 50  0000 C CNN
+F 2 "" H 625 6200 50  0001 C CNN
+F 3 "" H 625 6200 50  0001 C CNN
+	1    625  6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 6050 625  6050
+Wire Wire Line
+	625  6050 625  6200
+$Comp
+L power:GND #PWR?
+U 1 1 5F706F84
+P 2950 5200
+F 0 "#PWR?" H 2950 4950 50  0001 C CNN
+F 1 "GND" H 2955 5027 50  0000 C CNN
+F 2 "" H 2950 5200 50  0001 C CNN
+F 3 "" H 2950 5200 50  0001 C CNN
+	1    2950 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 5350 2800 5350
+Wire Wire Line
+	2800 5350 2800 5150
+Wire Wire Line
+	2800 5150 2950 5150
+Wire Wire Line
+	2950 5150 2950 5200
 Wire Bus Line
 	3300 4475 3300 5775
 $EndSCHEMATC

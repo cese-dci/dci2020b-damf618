@@ -17,12 +17,13 @@
     (company "Daniel Marquez - ISOLSE srl")
     (comment 1 "* Verison con adaptador nrf24l01 (solo Antena)")
     (comment 2 "* Dispositivo Secundario deMonitoreo de Alarma/Falla (N.O)")
-    (comment 4 "* Sistema Monitoreo Remoto de Alarma de Incendio (SMRAI)")
+    (comment 3 "* Sistema Monitoreo Remoto de Alarma de Incendio (SMRAI)")
+    (comment 4 "* Copyright (c) 2020 Isolse SRL todos losd erechos reservados")
   )
 
   (layers
     (0 F.Cu signal)
-    (31 B.Cu signal hide)
+    (31 B.Cu signal)
     (32 B.Adhes user)
     (33 F.Adhes user)
     (34 B.Paste user)
@@ -44,7 +45,7 @@
   )
 
   (setup
-    (last_trace_width 0.8)
+    (last_trace_width 0.25)
     (user_trace_width 0.8)
     (trace_clearance 0.4)
     (zone_clearance 0.508)
@@ -3018,7 +3019,7 @@
     (arrow2b (pts (xy 231 63) (xy 231.586421 64.126504)))
   )
   (dimension 146 (width 0.15) (layer Dwgs.User)
-    (gr_text "146,000 mm" (at 154 57.700001) (layer Dwgs.User) (tstamp 5F794452)
+    (gr_text "146,000 mm" (at 154 57.700001) (layer Dwgs.User)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (feature1 (pts (xy 81 63) (xy 81 58.41358)))

@@ -10,8 +10,8 @@ Rev "1.1"
 Comp "Daniel Marquez - ISOLSE srl"
 Comment1 "* Version con adaptador nrf24l01(solo Antena)  "
 Comment2 "* Dispositivo de Monitoreo de Contactos secos de Alarma/Falla (N.O)"
-Comment3 ""
-Comment4 "* Sistema Monitoreo Remoto de Alarma de Incencio (SMRAI )"
+Comment3 "* Sistema Monitoreo Remoto de Alarma de Incencio (SMRAI )"
+Comment4 "* Copyright (c) 2020 Isolse SRL todos los derechos reservados"
 $EndDescr
 $Comp
 L power:GND #PWR0101

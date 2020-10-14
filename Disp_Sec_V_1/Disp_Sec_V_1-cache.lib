@@ -20,6 +20,23 @@ X Pin_2 2 -200 -100 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Connector_TestPoint
+#
+DEF Connector_TestPoint TP 0 30 N N 1 F N
+F0 "TP" 0 270 50 H V C CNN
+F1 "Connector_TestPoint" 0 200 50 H V C CNN
+F2 "" 200 0 50 H I C CNN
+F3 "" 200 0 50 H I C CNN
+$FPLIST
+ Pin*
+ Test*
+$ENDFPLIST
+DRAW
+C 0 130 30 0 1 0 N
+X 1 1 0 0 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Device_C
 #
 DEF Device_C C 0 10 N Y 1 F N
@@ -179,6 +196,54 @@ X 3 3 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Disp_Sec_V_1-rescue_Contacto_Alarma-Disp_Sec_V_1-cache
+#
+DEF Disp_Sec_V_1-rescue_Contacto_Alarma-Disp_Sec_V_1-cache U 0 0 N N 1 F N
+F0 "U" 0 -100 50 H I C CNN
+F1 "Disp_Sec_V_1-rescue_Contacto_Alarma-Disp_Sec_V_1-cache" 0 0 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -350 50 350 -50 0 1 0 N
+ENDDRAW
+ENDDEF
+#
+# Disp_Sec_V_1-rescue_Contacto_Falla-Disp_Sec_V_1-cache
+#
+DEF Disp_Sec_V_1-rescue_Contacto_Falla-Disp_Sec_V_1-cache U 0 0 N N 1 F N
+F0 "U" 0 -100 50 H I C CNN
+F1 "Disp_Sec_V_1-rescue_Contacto_Falla-Disp_Sec_V_1-cache" 0 0 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -300 50 300 -50 0 1 0 N
+ENDDRAW
+ENDDEF
+#
+# Disp_Sec_V_1-rescue_DEEPCONTROL_LOGO-Disp_Sec_V_1-cache
+#
+DEF Disp_Sec_V_1-rescue_DEEPCONTROL_LOGO-Disp_Sec_V_1-cache U 0 0 N N 1 F N
+F0 "U" 0 -100 50 H I C CNN
+F1 "Disp_Sec_V_1-rescue_DEEPCONTROL_LOGO-Disp_Sec_V_1-cache" 0 0 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -400 50 400 -50 0 1 0 N
+ENDDRAW
+ENDDEF
+#
+# Disp_Sec_V_1-rescue_isolseLOGO-Disp_Sec_V_1-cache
+#
+DEF Disp_Sec_V_1-rescue_isolseLOGO-Disp_Sec_V_1-cache U 0 0 N N 1 F N
+F0 "U" 0 -100 50 H I C CNN
+F1 "Disp_Sec_V_1-rescue_isolseLOGO-Disp_Sec_V_1-cache" 0 0 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -250 50 250 -50 0 1 0 N
+ENDDRAW
+ENDDEF
+#
 # ESP8266_NodeMCU1.0(ESP-12E)
 #
 DEF ESP8266_NodeMCU1.0(ESP-12E) U 0 40 Y Y 1 F N
@@ -218,6 +283,36 @@ X SD1(MOSI) 6 -800 200 200 R 50 50 1 1 I
 X CMD(CS) 7 -800 100 200 R 50 50 1 1 I
 X SDO(MISO) 8 -800 0 200 R 50 50 1 1 I
 X CLK(SCLK) 9 -800 -100 200 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# Mechanical_Fiducial
+#
+DEF Mechanical_Fiducial FID 0 20 Y Y 1 F N
+F0 "FID" 0 200 50 H V C CNN
+F1 "Mechanical_Fiducial" 0 125 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Fiducial*
+$ENDFPLIST
+DRAW
+C 0 0 50 0 1 20 f
+ENDDRAW
+ENDDEF
+#
+# Mechanical_MountingHole
+#
+DEF Mechanical_MountingHole H 0 40 Y Y 1 F N
+F0 "H" 0 200 50 H V C CNN
+F1 "Mechanical_MountingHole" 0 125 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ MountingHole*
+$ENDFPLIST
+DRAW
+C 0 0 50 0 1 50 N
 ENDDRAW
 ENDDEF
 #

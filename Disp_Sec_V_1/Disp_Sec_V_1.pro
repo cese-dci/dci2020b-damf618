@@ -1,4 +1,4 @@
-update=vie 25 sep 2020 22:58:15 -03
+update=mié 14 oct 2020 17:29:55 -03
 version=1
 last_client=kicad
 [general]
@@ -240,7 +240,7 @@ Enabled=0
 [pcbnew/Netclasses]
 [pcbnew/Netclasses/Default]
 Name=Default
-Clearance=0.4
+Clearance=0.6
 TrackWidth=0.25
 ViaDiameter=0.8
 ViaDrill=0.4

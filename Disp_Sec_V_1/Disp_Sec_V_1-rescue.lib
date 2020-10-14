@@ -1,0 +1,52 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Contacto_Alarma-Disp_Sec_V_1-cache
+#
+DEF Contacto_Alarma-Disp_Sec_V_1-cache U 0 0 N N 1 F N
+F0 "U" 0 -100 50 H I C CNN
+F1 "Contacto_Alarma-Disp_Sec_V_1-cache" 0 0 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -350 50 350 -50 0 1 0 N
+ENDDRAW
+ENDDEF
+#
+# Contacto_Falla-Disp_Sec_V_1-cache
+#
+DEF Contacto_Falla-Disp_Sec_V_1-cache U 0 0 N N 1 F N
+F0 "U" 0 -100 50 H I C CNN
+F1 "Contacto_Falla-Disp_Sec_V_1-cache" 0 0 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -300 50 300 -50 0 1 0 N
+ENDDRAW
+ENDDEF
+#
+# DEEPCONTROL_LOGO-Disp_Sec_V_1-cache
+#
+DEF DEEPCONTROL_LOGO-Disp_Sec_V_1-cache U 0 0 N N 1 F N
+F0 "U" 0 -100 50 H I C CNN
+F1 "DEEPCONTROL_LOGO-Disp_Sec_V_1-cache" 0 0 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -400 50 400 -50 0 1 0 N
+ENDDRAW
+ENDDEF
+#
+# isolseLOGO-Disp_Sec_V_1-cache
+#
+DEF isolseLOGO-Disp_Sec_V_1-cache U 0 0 N N 1 F N
+F0 "U" 0 -100 50 H I C CNN
+F1 "isolseLOGO-Disp_Sec_V_1-cache" 0 0 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -250 50 250 -50 0 1 0 N
+ENDDRAW
+ENDDEF
+#
+#End Library

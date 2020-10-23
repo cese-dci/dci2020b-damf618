@@ -7,11 +7,11 @@ Sheet 1 1
 Title "Dispositivo Secundario - SMRAI "
 Date "2020-09-11"
 Rev "1.1"
-Comp "Daniel Marquez - ISOLSE srl"
+Comp "Daniel Marquez - ISOLSE srl revisor: Monzon Lucas"
 Comment1 "* Version con adaptador nrf24l01(solo Antena)  "
 Comment2 "* Dispositivo de Monitoreo de Contactos secos de Alarma/Falla (N.O)"
 Comment3 "* Sistema Monitoreo Remoto de Alarma de Incencio (SMRAI )"
-Comment4 "* Copyleft (cc) 2020 Isolse SRL "
+Comment4 "* Licensia BSD (Isolse SRL) "
 $EndDescr
 $Comp
 L power:GND #PWR0101
@@ -122,8 +122,8 @@ $Comp
 L Device:D D1
 U 1 1 5F65EBEA
 P 9225 1350
-F 0 "D1" V 9179 1430 50  0000 L CNN
-F 1 "1N5349B" V 9270 1430 50  0000 L CNN
+F 0 "D1" V 9125 1175 50  0000 L CNN
+F 1 "1N5349B" V 9225 925 50  0000 L CNN
 F 2 "Diode_THT:D_A-405_P10.16mm_Horizontal" H 9225 1350 50  0001 C CNN
 F 3 "https://www.alldatasheet.es/datasheet-pdf/pdf/58838/DIODES/1N5349B.html" H 9225 1350 50  0001 C CNN
 	1    9225 1350
@@ -460,7 +460,7 @@ U 1 1 5F65107C
 P 4550 950
 F 0 "F1" V 4475 950 50  0000 C CNN
 F 1 "100mA (5 x 20)" V 4444 950 50  0001 C CNN
-F 2 "Fuse_Holders_and_Fuses:Fuseholder5x20_horiz_open_inline_Type-I" V 4480 950 50  0001 C CNN
+F 2 "Disp_Sec_V_1:Fuse" V 4480 950 50  0001 C CNN
 F 3 "~" H 4550 950 50  0001 C CNN
 	1    4550 950 
 	0    1    1    0   
@@ -550,7 +550,7 @@ $Comp
 L Device:R_POT RV1
 U 1 1 5F6AB8E6
 P 8875 2850
-F 0 "RV1" H 9050 3050 50  0000 R CNN
+F 0 "RV1" H 8925 2625 50  0000 R CNN
 F 1 "R_POT 100k" H 9425 2775 50  0000 R CNN
 F 2 "Potentiometer_THT:Potentiometer_Bourns_3266W_Vertical" H 8875 2850 50  0001 C CNN
 F 3 "~" H 8875 2850 50  0001 C CNN
@@ -1059,8 +1059,8 @@ $Comp
 L Device:D_Schottky D4
 U 1 1 5F818AAA
 P 900 1800
-F 0 "D4" V 775 1650 50  0000 L CNN
-F 1 "SR2100" V 975 1900 50  0000 L CNN
+F 0 "D4" V 900 1900 50  0000 L CNN
+F 1 "SR2100" V 1000 1850 50  0000 L CNN
 F 2 "Diode_THT:D_DO-34_SOD68_P10.16mm_Horizontal" H 900 1800 50  0001 C CNN
 F 3 "https://html.alldatasheet.es/html-pdf/191389/WTE/SR2100/53/1/SR2100.html" H 900 1800 50  0001 C CNN
 	1    900  1800
@@ -1070,8 +1070,8 @@ $Comp
 L Device:D_Schottky D3
 U 1 1 5F818AA0
 P 900 1375
-F 0 "D3" V 775 1225 50  0000 L CNN
-F 1 "SR2100" V 1000 1150 50  0000 L CNN
+F 0 "D3" V 700 1250 50  0000 L CNN
+F 1 "SR2100" V 775 1125 39  0000 L CNN
 F 2 "Diode_THT:D_DO-34_SOD68_P10.16mm_Horizontal" H 900 1375 50  0001 C CNN
 F 3 "https://html.alldatasheet.es/html-pdf/191389/WTE/SR2100/53/1/SR2100.html" H 900 1375 50  0001 C CNN
 	1    900  1375
@@ -1092,8 +1092,8 @@ $Comp
 L Device:R R6
 U 1 1 5F818A82
 P 1400 1575
-F 0 "R6" H 1470 1621 50  0000 L CNN
-F 1 "220" H 1470 1530 50  0000 L CNN
+F 0 "R6" V 1500 1525 50  0000 L CNN
+F 1 "220" V 1575 1500 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P12.70mm_Horizontal" V 1330 1575 50  0001 C CNN
 F 3 "~" H 1400 1575 50  0001 C CNN
 	1    1400 1575
@@ -1161,8 +1161,8 @@ $Comp
 L Device:D_Schottky D5
 U 1 1 5F78DCEC
 P 900 3325
-F 0 "D5" V 775 3175 50  0000 L CNN
-F 1 "SR2100" V 1000 3100 50  0000 L CNN
+F 0 "D5" V 900 3150 50  0000 L CNN
+F 1 "SR2100" V 800 3075 39  0000 L CNN
 F 2 "Diode_THT:D_DO-34_SOD68_P10.16mm_Horizontal" H 900 3325 50  0001 C CNN
 F 3 "https://html.alldatasheet.es/html-pdf/191389/WTE/SR2100/53/1/SR2100.html" H 900 3325 50  0001 C CNN
 	1    900  3325
@@ -1323,8 +1323,8 @@ $Comp
 L Device:D D7
 U 1 1 5F91140E
 P 1700 1250
-F 0 "D7" V 1654 1330 50  0000 L CNN
-F 1 "1N5349B" V 1745 1330 50  0000 L CNN
+F 0 "D7" V 1600 1100 50  0000 L CNN
+F 1 "1N5349B" V 1675 850 50  0000 L CNN
 F 2 "Diode_THT:D_A-405_P10.16mm_Horizontal" H 1700 1250 50  0001 C CNN
 F 3 "https://www.alldatasheet.es/datasheet-pdf/pdf/58838/DIODES/1N5349B.html" H 1700 1250 50  0001 C CNN
 	1    1700 1250
@@ -1483,8 +1483,8 @@ $Comp
 L Device:D D8
 U 1 1 5F65D67C
 P 1725 3050
-F 0 "D8" V 1679 3130 50  0000 L CNN
-F 1 "1N5349B" V 1770 3130 50  0000 L CNN
+F 0 "D8" V 1625 2850 50  0000 L CNN
+F 1 "1N5349B" V 1725 2650 50  0000 L CNN
 F 2 "Diode_THT:D_A-405_P10.16mm_Horizontal" H 1725 3050 50  0001 C CNN
 F 3 "https://www.alldatasheet.es/datasheet-pdf/pdf/58838/DIODES/1N5349B.html" H 1725 3050 50  0001 C CNN
 	1    1725 3050
@@ -1494,8 +1494,8 @@ $Comp
 L Device:R R7
 U 1 1 5F657505
 P 1400 3525
-F 0 "R7" H 1470 3571 50  0000 L CNN
-F 1 "220" H 1470 3480 50  0000 L CNN
+F 0 "R7" V 1500 3475 50  0000 L CNN
+F 1 "220" V 1575 3450 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P12.70mm_Horizontal" V 1330 3525 50  0001 C CNN
 F 3 "~" H 1400 3525 50  0001 C CNN
 	1    1400 3525

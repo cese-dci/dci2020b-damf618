@@ -1,3 +1,3 @@
 (fp_lib_table
-  (lib (name Fuse_Holders_and_Fuses)(type KiCad)(uri /home/daniel/Desktop/DCI-Proyecto/Disp_Sec_V_1/Disp_Sec_V_1.pretty/3dshapeskicad/3dshapes/fOOTPRINT/Fuse_Holders_and_Fuses.pretty-master)(options "")(descr ""))
+  (lib (name Fuse_Holders_and_Fuses)(type KiCad)(uri ${KIPRJMOD}/Disp_Sec_V_1.pretty/3dshapeskicad/3dshapes/fOOTPRINT/Fuse_Holders_and_Fuses.pretty-master)(options "")(descr ""))
 )
